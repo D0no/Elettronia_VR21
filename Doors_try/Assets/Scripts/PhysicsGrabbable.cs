@@ -6,6 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class PhysicsGrabbable : Grabbable
 {
+    public static bool IsGrabbed = false;
     private Rigidbody _rigidbody;
     private Collider _collider;
 
@@ -19,13 +20,19 @@ public class PhysicsGrabbable : Grabbable
 
     public override void Grab(GameObject grabber)
     {
-        _collider.enabled = false;
-        _rigidbody.isKinematic = true; //permette movimento libero
+            IsGrabbed = true;
+            Snapper.IsSnapped = false;
+            _collider.enabled = false;
+            _rigidbody.isKinematic = true; //permette movimento libero
+        
     }
 
     public override void Drop()
     {
-        _collider.enabled = true;
-        _rigidbody.isKinematic = false; //lo fa tornare soggetto alla gravità
+
+             IsGrabbed = false;
+            _collider.enabled = true;
+            _rigidbody.isKinematic = false; //lo fa tornare soggetto alla gravità
+        
     }
 }
