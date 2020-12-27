@@ -7,32 +7,40 @@ public class Opener : Interactable
     public GameObject _button;
     public Animator _animatorL;
     public Animator _animatorR;
-    //private Collider _interactableCollider;
+    public AudioSource _button_sound;
+    public AudioSource _doorL_sound;
+    public AudioSource _doorR_sound;
+
+
 
     void Start()
     {
-        //_interactableCollider = GetComponent<Collider>();
+       
     }
 
     public override void Interact(GameObject caller)
     {
-        //_interactableCollider.enabled = false;
-        _animatorL.SetBool("Slider", true);
-        _animatorR.SetBool("Slider", true);
+        if ((_animatorL.GetBool("Slider") && _animatorR.GetBool("Slider")) == false) //door is closed interaction will open
+        {
+            _animatorL.SetBool("Slider", true);
+            _animatorR.SetBool("Slider", true);
+            _button_sound.Play();
+            _doorL_sound.Play();
+            _doorR_sound.Play();
+        }
 
-        //the result of the dot product returns > 0 if relative position 
-        /*float dotResult = Vector3.Dot(othersPositionRelativeToDoor, transform.forward);
+        else //door is open interaction will close
+        {
+            _animatorL.SetBool("Slider", false);
+            _animatorR.SetBool("Slider", false);
+            _button_sound.Play();
+            _doorL_sound.Play();
+            _doorR_sound.Play();
+        }
 
-        float doorRotation = dotResult > 0 ? 90f : -90f;
-
-        if (_door != null)
-            _door.OpenDoor(doorRotation);*/
     }
 
-    /*private void ButtonInt()
-    {
-        _interactableCollider.enabled = true;
-    }*/
+ 
 
 
 }
