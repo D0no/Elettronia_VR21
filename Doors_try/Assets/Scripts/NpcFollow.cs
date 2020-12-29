@@ -27,7 +27,7 @@ public class NpcFollow : MonoBehaviour
             if (TargetDistance >= AllowedDistance)
             {
                 NPCAnimator.SetBool("Idle", false);
-                Speed = 0.05f;
+                Speed = 0.065f;
                 
                 //animation  for follow
                 transform.position = Vector3.MoveTowards(transform.position, ThePlayer.transform.position, Speed);
