@@ -23,6 +23,7 @@ public class PhysicsGrabbable : Grabbable
             IsGrabbed = true;
             Snapper.IsSnapped = false;
             _collider.enabled = false;
+
             _rigidbody.isKinematic = true; //permette movimento libero
         
     }
@@ -32,7 +33,8 @@ public class PhysicsGrabbable : Grabbable
 
              IsGrabbed = false;
             _collider.enabled = true;
-            _rigidbody.isKinematic = false; //lo fa tornare soggetto alla gravità
+        _rigidbody.constraints = RigidbodyConstraints.None;
+        _rigidbody.isKinematic = false; //lo fa tornare soggetto alla gravità
         
     }
 }

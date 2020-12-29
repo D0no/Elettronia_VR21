@@ -20,6 +20,8 @@ public class Snapper : MonoBehaviour
     {
         if (IsSnapped == true && PhysicsGrabbable.IsGrabbed == false)
         {
+            _rigidbody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+
             if (snapparent.tag == "wireblock") //snap the component to the wire with the transform pointing outwards
             {
                 transform.position = snapparent.transform.position;
