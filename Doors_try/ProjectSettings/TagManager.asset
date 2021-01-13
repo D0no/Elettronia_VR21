@@ -6,6 +6,10 @@ TagManager:
   tags:
   - wireblock
   - wireblockrot
+  - res_big
+  - res_medium
+  - res_small
+  - generator
   layers:
   - Default
   - TransparentFX
