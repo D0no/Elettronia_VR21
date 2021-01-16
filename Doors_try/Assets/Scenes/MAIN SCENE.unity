@@ -691,7 +691,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 6e-45, z: 9e-44, w: -0.000000001851733}
+  m_BoundingSphereOverride: {x: 0, y: 6e-45, z: 9e-44, w: 9.432205}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1571,7 +1571,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605974043}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd60be0c9c93f5f45b2844e3b4341442, type: 3}
   m_Name: 
@@ -1597,6 +1597,23 @@ CapsuleCollider:
   m_Height: 0.25496903
   m_Direction: 1
   m_Center: {x: -0.07531279, y: -0.000000029802326, z: 0.0000001192093}
+--- !u!114 &1633344431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633344426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aefa8eb9fb35b44fbfe2bcc0cb11dee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correct_power: 0
+  debugged: 0
+  _center: {x: 0, y: 0, z: 0}
+  _direction: {x: 0, y: 0, z: 0}
+  _range: 0
 --- !u!1 &1691487447 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7375262978419350877, guid: 0448cdb0cbf9c464aa48402f2272b545,
@@ -2299,6 +2316,7 @@ GameObject:
   - component: {fileID: 1096151478315089276}
   - component: {fileID: 8242639683127863660}
   - component: {fileID: 5679130088034147817}
+  - component: {fileID: 2137160768669341384}
   m_Layer: 0
   m_Name: LampBulb
   m_TagString: Untagged
@@ -2306,6 +2324,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2137160768669341384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137160768669341383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca88d5ef49e3b5740825933bba6919a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2324385215161048273 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7712973836813497371, guid: 74729b875a3368b48a90a03f663367e9,
