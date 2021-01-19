@@ -11,6 +11,7 @@ public class PhysicsGrabbable : Grabbable
     private Collider _collider;
     private GameObject _gameobject;
     Grabbable grabbed_object;
+    public GameObject _fpsCamera;
 
 
     protected override void Start()
@@ -27,10 +28,13 @@ public class PhysicsGrabbable : Grabbable
 
         IsGrabbed = true;
         Snapper.IsSnapped_static = false;
-        _collider.enabled = false;
-        _rigidbody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
-        _rigidbody.isKinematic = true; //permette movimento libero
+        LampSnapper.IsSnapped_static = false;
+        _collider.enabled = true;
+        _rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+        //_rigidbody.isKinematic = true; //permette movimento libero
+        _rigidbody.useGravity = false;
         
+
     }
 
     public override void Drop()
@@ -38,9 +42,11 @@ public class PhysicsGrabbable : Grabbable
 
         IsGrabbed = false;
         Snapper.IsSnapped_static = false;
+        LampSnapper.IsSnapped_static = false;
         _collider.enabled = true;
         _rigidbody.constraints = RigidbodyConstraints.None;
-        _rigidbody.isKinematic = false; //lo fa tornare soggetto alla gravità
-        
+        //_rigidbody.isKinematic = false; //lo fa tornare soggetto alla gravità
+        _rigidbody.useGravity = true;
+
     }
 }

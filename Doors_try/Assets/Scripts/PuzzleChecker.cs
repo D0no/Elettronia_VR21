@@ -5,6 +5,7 @@ using UnityEngine;
 public class PuzzleChecker : MonoBehaviour
 {
     public bool correct_power;
+    public bool correct_switch;
     public bool debugged;
     public static bool solved;
     
@@ -31,13 +32,15 @@ public class PuzzleChecker : MonoBehaviour
     {
 
         correct_power = GameObject.FindWithTag("generator").GetComponent<Generator>().Power;
+        correct_switch = GameObject.FindWithTag("switch").GetComponent<Switch>().isClosed;
+
         Ray ray = new Ray(_center, _direction);
         Debug.DrawRay(_center, _direction, Color.green);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, _range))
         {
             pointed_object = hit.transform.gameObject;
-            if ((pointed_object == correct_res) && (correct_power == true) && debugged == false)
+            if ((pointed_object == correct_res) && (correct_power == true) && (correct_switch == true) && debugged == false)
             {
                 Debug.Log("CORRETTO");
                 debugged = true;

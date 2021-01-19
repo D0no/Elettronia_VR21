@@ -102,7 +102,7 @@ public class FPSInteractionManager : MonoBehaviour
     {
         _grabbedObject = grabbable;
         grabbable.transform.SetParent(_fpsCameraT); //rende parente con il controller
-
+        
         _target.enabled = false;
     }
 
