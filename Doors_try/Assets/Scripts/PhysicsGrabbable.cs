@@ -23,6 +23,10 @@ public class PhysicsGrabbable : Grabbable
 
     }
 
+    //PROBLEMA: le variabili is snapped static cambiate in questo script cambiano per tutti gli oggetti anche se ne viene grabbato uno diverso
+    //le variabili is snapped dei singoli script invece non si resettano e quindi possono generare problemi (vedi colore sfere interruttore)
+    //questa cosa va risolta e il metodo più becero può essere creare uno script Physics Grabbable DIVERSO per ogni oggetto in modo da separare le interazioni
+
     public override void Grab(GameObject grabber)
     {
 

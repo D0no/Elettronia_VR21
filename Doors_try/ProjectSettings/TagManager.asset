@@ -12,6 +12,7 @@ TagManager:
   - generator
   - switch
   - lampconnector
+  - lamp
   layers:
   - Default
   - TransparentFX
