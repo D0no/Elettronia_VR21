@@ -269,7 +269,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.r
-    path: Sphere
+    path: Current1
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -315,7 +315,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.g
-    path: Sphere
+    path: Current1
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -361,7 +361,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.b
-    path: Sphere
+    path: Current1
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -407,7 +407,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.a
-    path: Sphere
+    path: Current1
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -453,7 +453,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.r
-    path: Sphere (1)
+    path: Current2
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -499,7 +499,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.g
-    path: Sphere (1)
+    path: Current2
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -545,7 +545,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.b
-    path: Sphere (1)
+    path: Current2
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -591,7 +591,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.a
-    path: Sphere (1)
+    path: Current2
     classID: 23
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -617,14 +617,14 @@ AnimationClip:
       customType: 22
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1381327793
+      path: 3986990941
       attribute: 2108656497
       script: {fileID: 0}
       typeID: 23
       customType: 22
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2654027243
+      path: 1957557991
       attribute: 2108656497
       script: {fileID: 0}
       typeID: 23
@@ -652,42 +652,42 @@ AnimationClip:
       customType: 22
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1381327793
+      path: 3986990941
       attribute: 1303350129
       script: {fileID: 0}
       typeID: 23
       customType: 22
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1381327793
+      path: 3986990941
       attribute: 1571785585
       script: {fileID: 0}
       typeID: 23
       customType: 22
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1381327793
+      path: 3986990941
       attribute: 1840221041
       script: {fileID: 0}
       typeID: 23
       customType: 22
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2654027243
+      path: 1957557991
       attribute: 1303350129
       script: {fileID: 0}
       typeID: 23
       customType: 22
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2654027243
+      path: 1957557991
       attribute: 1571785585
       script: {fileID: 0}
       typeID: 23
       customType: 22
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2654027243
+      path: 1957557991
       attribute: 1840221041
       script: {fileID: 0}
       typeID: 23
@@ -1026,7 +1026,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.r
-    path: Sphere
+    path: Current1
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -1072,7 +1072,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.g
-    path: Sphere
+    path: Current1
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -1118,7 +1118,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.b
-    path: Sphere
+    path: Current1
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -1164,7 +1164,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.a
-    path: Sphere
+    path: Current1
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -1210,7 +1210,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.r
-    path: Sphere (1)
+    path: Current2
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -1256,7 +1256,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.g
-    path: Sphere (1)
+    path: Current2
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -1302,7 +1302,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.b
-    path: Sphere (1)
+    path: Current2
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -1348,7 +1348,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.a
-    path: Sphere (1)
+    path: Current2
     classID: 23
     script: {fileID: 0}
   m_EulerEditorCurves: []
