@@ -18,6 +18,8 @@ public class FPSInteractionManager : MonoBehaviour
 
     private Grabbable _grabbedObject = null;
 
+    public Renderer CoilGun_Tip;
+
 
     void Start()
     {
@@ -40,7 +42,7 @@ public class FPSInteractionManager : MonoBehaviour
             DebugRaycast();
     }
 
- 
+
 
     private void CheckInteraction()
     {
@@ -79,12 +81,18 @@ public class FPSInteractionManager : MonoBehaviour
 
     private void UpdateUITarget() //cambia il colore del target in base a cosa si sta puntando
     {
-        if (_pointingInteractable)
-            _target.color = Color.green;
-        else if (_pointingGrabbable)
+        if (_pointingInteractable) { 
+        _target.color = Color.green;
+        CoilGun_Tip.material.EnableKeyword("_EMISSION");
+    }
+        else if (_pointingGrabbable){
             _target.color = Color.yellow;
-        else
-            _target.color = Color.red;
+        CoilGun_Tip.material.EnableKeyword("_EMISSION");
+        }
+        else {
+    _target.color = Color.red;
+    CoilGun_Tip.material.DisableKeyword("_EMISSION");
+     }
     }
     private void Drop()
     {
